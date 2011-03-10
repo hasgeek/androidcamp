@@ -1,0 +1,10 @@
+@import "partials/base";
+
+
+#wrapper {
+    @include container;
+}
+
+.notify_button {
+    @include fancy-button(#9c3, 14px, 2px);
+}
