@@ -7,6 +7,18 @@ gem 'rails', '3.0.5'
 
 gem 'sqlite3'
 
+gem 'haml'
+gem 'compass'
+gem 'fancy-buttons'
+gem 'jquery-rails'
+
+group :development, :test do
+  gem 'cucumber-rails'
+  gem 'rspec-rails'
+  gem 'capybara'
+end
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
