@@ -11,12 +11,14 @@ gem 'haml'
 gem 'compass'
 gem 'fancy-buttons'
 gem 'jquery-rails'
+gem 'omniauth'
 
 group :development, :test do
   gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'capybara'
 end
+
 
 
 # Use unicorn as the web server
