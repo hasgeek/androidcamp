@@ -1,0 +1,155 @@
+/* line 14, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* incase an inverted custom gradient isn't specified */
+/* line 177, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class, .notify_button {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('/images/button_bg.png?1299732143') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold;
+}
+/* line 165, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class::-moz-focus-inner, .notify_button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 168, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class:focus, .notify_button:focus {
+  outline: none;
+}
+
+/* line 4, ../../../app/stylesheets/app.scss */
+#wrapper {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 8, ../../../app/stylesheets/app.scss */
+.notify_button {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #aaff00;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #dceeba), color-stop(10%, #b8db70), color-stop(50%, #90c030), color-stop(50%, #87b42d), color-stop(100%, #a1d043));
+  background-image: -moz-linear-gradient(top, #dceeba 0%, #b8db70 10%, #90c030 50%, #87b42d 50%, #a1d043 100%);
+  background-image: linear-gradient(top, #dceeba 0%, #b8db70 10%, #90c030 50%, #87b42d 50%, #a1d043 100%);
+  border-color: #6b8f24;
+  text-shadow: #558000 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button, .notify_button:visited {
+  color: white;
+}
+/* line 31, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:hover, .notify_button:focus {
+  background-color: #a0f000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #d6ebad), color-stop(10%, #b1d864), color-stop(50%, #87b42d), color-stop(50%, #7da72a), color-stop(100%, #9bcd37));
+  background-image: -moz-linear-gradient(top, #d6ebad 0%, #b1d864 10%, #87b42d 50%, #7da72a 50%, #9bcd37 100%);
+  background-image: linear-gradient(top, #d6ebad 0%, #b1d864 10%, #87b42d 50%, #7da72a 50%, #9bcd37 100%);
+  border-color: #628321;
+  text-shadow: #4b7000 0px 1px 1px;
+}
+/* line 116, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:hover, .notify_button:hover:visited, .notify_button:focus, .notify_button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:active {
+  background-color: #96e000;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87b42d), color-stop(30%, #8dbc2f), color-stop(50%, #81ab2b), color-stop(50%, #779f28), color-stop(100%, #9dce3b));
+  background-image: -moz-linear-gradient(top, #87b42d 0%, #8dbc2f 30%, #81ab2b 50%, #779f28 50%, #9dce3b 100%);
+  background-image: linear-gradient(top, #87b42d 0%, #8dbc2f 30%, #81ab2b 50%, #779f28 50%, #9dce3b 100%);
+  border-color: #59761e;
+  text-shadow: #416100 0px -1px -1px;
+  -moz-box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+  box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.notify_button:active, .notify_button:active:visited {
+  color: white;
+}
