@@ -1,5 +1,6 @@
 Androidcamp::Application.routes.draw do
   resources :talks
+  root :to => "talks#home"
   match "auth/:provider/callback" => "sessions#create"
   
   # The priority is based upon order of creation:
