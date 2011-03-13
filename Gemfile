@@ -12,7 +12,7 @@ gem 'compass'
 gem 'fancy-buttons'
 gem 'jquery-rails'
 gem 'omniauth'
-gem 'openid'
+gem 'oa-openid'
 
 group :development, :test do
   gem 'cucumber-rails'

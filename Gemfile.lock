@@ -122,7 +122,6 @@ GEM
       oa-more (= 0.2.0)
       oa-oauth (= 0.2.0)
       oa-openid (= 0.2.0)
-    openid (0.0.1)
     polyglot (0.3.1)
     pyu-ruby-sasl (0.0.3.2)
     rack (1.2.2)
@@ -191,8 +190,8 @@ DEPENDENCIES
   fancy-buttons
   haml
   jquery-rails
+  oa-openid
   omniauth
-  openid
   rails (= 3.0.5)
   rspec-rails
   sqlite3
