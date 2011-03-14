@@ -6,6 +6,25 @@ $droid-green: #4E7000;
     @include blueprint(true);
     @include container;
 
+    font-family: 'Droid Sans', arial, sans-serif;
+
+    #header {
+        text-align: center;
+        @include column(24,true);
+        #site_name {
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 1)));
+            color: #699108;
+            #android {
+                font-family: 'Droid Sans', arial, sans-serif;
+                font-weight: bold;
+            }
+            #camp {
+                font-family: 'Droid Serif', georgia, sans-serif;
+                font-weight: normal;
+            }
+        }
+    }
+
     #footer {
         text-align: center;
         color: $droid-green;

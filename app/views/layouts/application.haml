@@ -20,12 +20,18 @@
   %body
     #wrapper
       #header
-        - if current_user
-          Welcome
-          = current_user.name
-          = link_to "Sign Out", signout_path
-        - else
-          = link_to "Sign in with Google", "/auth/google"
+        #droid_logo
+          = image_tag "android.png"
+        %h1{:id=>"site_name"}
+          %span{:id=>"android"}>Android
+          &#8203;
+          %span{:id=>"camp"}>Camp
+        #user_info
+          - if current_user
+            = current_user.name
+            = link_to "SignOut", signout_path
+          - else
+            = link_to "Sign In with Google", "/auth/google"
       #content
         = yield
       #footer
