@@ -1,6 +1,4 @@
 class MainController < ApplicationController
-  def home
-  end
 
   def login
     if current_user

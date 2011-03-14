@@ -1,7 +1,11 @@
 class TalksController < ApplicationController
 
-  before_filter :auth_user, :except => [:index, :show]
+  before_filter :auth_user, :except => [:index, :show, :home]
   before_filter :current_user, :only =>[:index, :show]
+
+  def home
+  end
+  
   # GET /talks
   # GET /talks.xml
   def index
