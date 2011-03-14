@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
   has_many :talks
+  has_many :comments, :through => :talks
 
   def self.create_with_omniauth(auth)
     create! do |user|
