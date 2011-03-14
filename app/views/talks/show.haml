@@ -1,0 +1,27 @@
+= render "quick_nav"
+
+.talk
+  .title
+    = @talk.title
+  .talk_meta
+    Submitted by 
+    = @talk.user.name
+  .description
+    = @talk.description
+  
+  .comments
+    .comment_count
+      %span{:id=>"count_number"}=@talk.comments.count
+      comments
+    - @talk.comments.each do |c|
+      .comment
+        = c.description
+
+    - if @current_user
+      - form_for @comment, :remote=>true  do |f|
+        = @current_user.name
+        says
+        %br
+        = f.text_area :description
+        %br
+        = f.submit "Add comment", :class=>"submit_button"

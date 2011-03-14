@@ -33,9 +33,15 @@
           %span{:id=>"android"}>Android
           &#8203;
           %span{:id=>"camp"}>Camp
-        
+        #event_date
+          Friday, 1 April 2011, Bangalore
+      -if notice
+        #notice
+          =notice
+
       #content
         = yield
+
       #footer
         AndroidCamp is an event by the fine fellows at
         = link_to "HasGeek.", "http://hasgeek.in"

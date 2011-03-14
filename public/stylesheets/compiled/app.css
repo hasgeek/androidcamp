@@ -60,7 +60,7 @@ a img {
 
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class, .notify_button {
+.fancy-button-reset-base-class, .submit_button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png?1299732143') repeat-x bottom left;
   margin: 0;
@@ -73,12 +73,12 @@ a img {
   font-weight: bold;
 }
 /* line 165, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner, .notify_button::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, .submit_button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus, .notify_button:focus {
+.fancy-button-reset-base-class:focus, .submit_button:focus {
   outline: none;
 }
 
@@ -1097,22 +1097,32 @@ a img {
 * html #wrapper #header {
   overflow-x: hidden;
 }
-/* line 27, ../../../app/stylesheets/app.scss */
+/* line 28, ../../../app/stylesheets/app.scss */
 #wrapper #header #site_name {
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(white));
   color: #699108;
+  margin-bottom: 3px;
 }
-/* line 30, ../../../app/stylesheets/app.scss */
+/* line 32, ../../../app/stylesheets/app.scss */
 #wrapper #header #site_name #android {
   font-family: 'Droid Sans', arial, sans-serif;
   font-weight: bold;
 }
-/* line 34, ../../../app/stylesheets/app.scss */
+/* line 36, ../../../app/stylesheets/app.scss */
 #wrapper #header #site_name #camp {
   font-family: 'Droid Serif', georgia, sans-serif;
   font-weight: normal;
 }
-/* line 41, ../../../app/stylesheets/app.scss */
+/* line 42, ../../../app/stylesheets/app.scss */
+#wrapper #header #event_date {
+  font-size: 130%;
+  color: #699108;
+}
+/* line 49, ../../../app/stylesheets/app.scss */
+#wrapper #content h2.page_title {
+  color: #777;
+}
+/* line 54, ../../../app/stylesheets/app.scss */
 #wrapper #footer {
   display: inline;
   float: left;
@@ -1127,12 +1137,12 @@ a img {
 * html #wrapper #footer {
   overflow-x: hidden;
 }
-/* line 47, ../../../app/stylesheets/app.scss */
+/* line 60, ../../../app/stylesheets/app.scss */
 #wrapper #footer a {
   color: #4e7000;
 }
 
-/* line 53, ../../../app/stylesheets/app.scss */
+/* line 68, ../../../app/stylesheets/app.scss */
 #talks {
   display: inline;
   float: left;
@@ -1143,7 +1153,7 @@ a img {
 * html #talks {
   overflow-x: hidden;
 }
-/* line 56, ../../../app/stylesheets/app.scss */
+/* line 71, ../../../app/stylesheets/app.scss */
 #talks #nav a {
   color: #F66;
   font-size: 85%;
@@ -1151,7 +1161,7 @@ a img {
   text-transform: uppercase;
 }
 
-/* line 65, ../../../app/stylesheets/app.scss */
+/* line 80, ../../../app/stylesheets/app.scss */
 #activity {
   display: inline;
   float: left;
@@ -1163,19 +1173,19 @@ a img {
   overflow-x: hidden;
 }
 
-/* line 70, ../../../app/stylesheets/app.scss */
+/* line 85, ../../../app/stylesheets/app.scss */
 #talks .block_title, #activity .block_title {
   font-size: 120%;
   color: #777;
 }
 
-/* line 77, ../../../app/stylesheets/app.scss */
+/* line 92, ../../../app/stylesheets/app.scss */
 #activity .block_title {
   text-align: center;
 }
 
-/* line 82, ../../../app/stylesheets/app.scss */
-.notify_button {
+/* line 97, ../../../app/stylesheets/app.scss */
+.submit_button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -1204,11 +1214,11 @@ a img {
   background-clip: padding-box;
 }
 /* line 116, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.notify_button, .notify_button:visited {
+.submit_button, .submit_button:visited {
   color: white;
 }
 /* line 31, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.notify_button:hover, .notify_button:focus {
+.submit_button:hover, .submit_button:focus {
   background-color: #a0f000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #d6ebad), color-stop(10%, #b1d864), color-stop(50%, #87b42d), color-stop(50%, #7da72a), color-stop(100%, #9bcd37));
   background-image: -moz-linear-gradient(top, #d6ebad 0%, #b1d864 10%, #87b42d 50%, #7da72a 50%, #9bcd37 100%);
@@ -1217,11 +1227,11 @@ a img {
   text-shadow: #4b7000 0px 1px 1px;
 }
 /* line 116, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.notify_button:hover, .notify_button:hover:visited, .notify_button:focus, .notify_button:focus:visited {
+.submit_button:hover, .submit_button:hover:visited, .submit_button:focus, .submit_button:focus:visited {
   color: white;
 }
 /* line 36, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.notify_button:active {
+.submit_button:active {
   background-color: #96e000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #87b42d), color-stop(30%, #8dbc2f), color-stop(50%, #81ab2b), color-stop(50%, #779f28), color-stop(100%, #9dce3b));
   background-image: -moz-linear-gradient(top, #87b42d 0%, #8dbc2f 30%, #81ab2b 50%, #779f28 50%, #9dce3b 100%);
@@ -1234,6 +1244,39 @@ a img {
   box-shadow: #6b8f24 0 0.08em 0.1em 1px inset;
 }
 /* line 116, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.notify_button:active, .notify_button:active:visited {
+.submit_button:active, .submit_button:active:visited {
   color: white;
+}
+
+/* line 101, ../../../app/stylesheets/app.scss */
+.talk {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  margin-top: 30px;
+  clear: both;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .talk {
+  overflow-x: hidden;
+}
+/* line 106, ../../../app/stylesheets/app.scss */
+.talk .talk_meta {
+  font-size: 80%;
+  color: #777;
+}
+/* line 111, ../../../app/stylesheets/app.scss */
+.talk .title {
+  font-size: 140%;
+}
+/* line 115, ../../../app/stylesheets/app.scss */
+.talk .description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 120, ../../../app/stylesheets/app.scss */
+.talk .comment_count {
+  font-size: 120%;
+  font-family: Serif;
 }

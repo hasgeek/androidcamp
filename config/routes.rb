@@ -5,6 +5,7 @@ Androidcamp::Application.routes.draw do
   get "main/login"
 
   resources :talks
+  resources :comments
   root :to => "main#home"
 
   match "auth/:provider/callback" => "sessions#create"
