@@ -1,4 +1,7 @@
 class TalksController < ApplicationController
+
+  before_filter :auth_user, :except => [:index, :show]
+  
   # GET /talks
   # GET /talks.xml
   def index
@@ -25,7 +28,7 @@ class TalksController < ApplicationController
   # GET /talks/new.xml
   def new
     @talk = Talk.new
-
+    @talk.user = @current_user
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @talk }

@@ -1,9 +1,16 @@
 Androidcamp::Application.routes.draw do
+
+  get "main/home"
+
+  get "main/login"
+
   resources :talks
   root :to => "talks#index"
+
   match "auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
-  
+  match "/login" => "main#login", :as => :ask_login
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
