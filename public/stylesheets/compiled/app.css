@@ -82,7 +82,7 @@ a img {
   outline: none;
 }
 
-/* line 4, ../../../app/stylesheets/app.scss */
+/* line 5, ../../../app/stylesheets/app.scss */
 #wrapper {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -1064,8 +1064,18 @@ a img {
   width: 390px;
   height: 250px;
 }
-
 /* line 9, ../../../app/stylesheets/app.scss */
+#wrapper #footer {
+  text-align: center;
+  color: #4e7000;
+  font-family: 'Droid Sans', arial, sans-serif;
+}
+/* line 13, ../../../app/stylesheets/app.scss */
+#wrapper #footer a {
+  color: #4e7000;
+}
+
+/* line 19, ../../../app/stylesheets/app.scss */
 .notify_button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;

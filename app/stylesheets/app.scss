@@ -1,9 +1,19 @@
 @import "partials/base";
 
+$droid-green: #4E7000;
 
 #wrapper {
     @include blueprint(true);
     @include container;
+
+    #footer {
+        text-align: center;
+        color: $droid-green;
+        font-family: 'Droid Sans', arial, sans-serif;
+        a {
+            color: $droid-green;
+        }
+    }
 }
 
 .notify_button {
