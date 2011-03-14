@@ -92,6 +92,7 @@ a img {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  font-size: 105%;
   font-family: 'Droid Sans', arial, sans-serif;
 }
 /* line 65, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
@@ -1065,45 +1066,115 @@ a img {
   width: 390px;
   height: 250px;
 }
-/* line 11, ../../../app/stylesheets/app.scss */
-#wrapper #header {
-  text-align: center;
+/* line 12, ../../../app/stylesheets/app.scss */
+#wrapper #user_info {
   display: inline;
   float: left;
   margin-right: 0;
   width: 950px;
+  text-align: right;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #wrapper #user_info {
+  overflow-x: hidden;
+}
+/* line 15, ../../../app/stylesheets/app.scss */
+#wrapper #user_info .login_link {
+  font-size: 120%;
+  margin-top: 4px;
+  color: #333;
+}
+/* line 22, ../../../app/stylesheets/app.scss */
+#wrapper #header {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 /* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #wrapper #header {
   overflow-x: hidden;
 }
-/* line 14, ../../../app/stylesheets/app.scss */
+/* line 27, ../../../app/stylesheets/app.scss */
 #wrapper #header #site_name {
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(white));
   color: #699108;
 }
-/* line 17, ../../../app/stylesheets/app.scss */
+/* line 30, ../../../app/stylesheets/app.scss */
 #wrapper #header #site_name #android {
   font-family: 'Droid Sans', arial, sans-serif;
   font-weight: bold;
 }
-/* line 21, ../../../app/stylesheets/app.scss */
+/* line 34, ../../../app/stylesheets/app.scss */
 #wrapper #header #site_name #camp {
   font-family: 'Droid Serif', georgia, sans-serif;
   font-weight: normal;
 }
-/* line 28, ../../../app/stylesheets/app.scss */
+/* line 41, ../../../app/stylesheets/app.scss */
 #wrapper #footer {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+  margin-top: 40px;
   text-align: center;
   color: #4e7000;
   font-family: 'Droid Sans', arial, sans-serif;
 }
-/* line 32, ../../../app/stylesheets/app.scss */
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #wrapper #footer {
+  overflow-x: hidden;
+}
+/* line 47, ../../../app/stylesheets/app.scss */
 #wrapper #footer a {
   color: #4e7000;
 }
 
-/* line 38, ../../../app/stylesheets/app.scss */
+/* line 53, ../../../app/stylesheets/app.scss */
+#talks {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 590px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #talks {
+  overflow-x: hidden;
+}
+/* line 56, ../../../app/stylesheets/app.scss */
+#talks #nav a {
+  color: #F66;
+  font-size: 85%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 65, ../../../app/stylesheets/app.scss */
+#activity {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #activity {
+  overflow-x: hidden;
+}
+
+/* line 70, ../../../app/stylesheets/app.scss */
+#talks .block_title, #activity .block_title {
+  font-size: 120%;
+  color: #777;
+}
+
+/* line 77, ../../../app/stylesheets/app.scss */
+#activity .block_title {
+  text-align: center;
+}
+
+/* line 82, ../../../app/stylesheets/app.scss */
 .notify_button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;

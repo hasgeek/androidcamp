@@ -5,12 +5,25 @@ $droid-green: #4E7000;
 #wrapper {
     @include blueprint(true);
     @include container;
-
+    
+    font-size: 105%;
     font-family: 'Droid Sans', arial, sans-serif;
 
-    #header {
-        text-align: center;
+    #user_info {
         @include column(24,true);
+        text-align: right;
+        .login_link {
+            font-size: 120%;
+            margin-top: 4px;
+            color: #333;
+        }
+    }
+
+    #header {
+        @include column(24,true);
+
+        margin-bottom: 20px;
+        text-align: center;
         #site_name {
             -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 1)));
             color: #699108;
@@ -26,12 +39,43 @@ $droid-green: #4E7000;
     }
 
     #footer {
+        @include column(24,true);
+        margin-top: 40px;
         text-align: center;
         color: $droid-green;
         font-family: 'Droid Sans', arial, sans-serif;
         a {
             color: $droid-green;
         }
+    }
+}
+
+#talks {
+    @include column(15);
+    #nav {
+        a {
+            color: #F66;
+            font-size: 85%;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#activity {
+    @include column(8,true);
+}
+
+#talks, #activity {
+    .block_title {
+        font-size: 120%;
+        color: #777;
+    }
+}
+
+#activity {
+    .block_title {
+        text-align: center;
     }
 }
 
