@@ -13,7 +13,11 @@ class ApplicationController < ActionController::Base
 
   def auth_user
     unless current_user
-      redirect_to ask_login_url
+      if request.xhr?
+        render :json => "not authorized", :status => :unprocessable_entity
+      else
+        redirect_to ask_login_url
+      end
     end
   end
   

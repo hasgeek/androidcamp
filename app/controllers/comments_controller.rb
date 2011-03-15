@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(params[:comment])
-    @comment
+    @comment.user_id = @current_user.id
     if request.xhr?
       if @comment.save
         render :json => @comment
