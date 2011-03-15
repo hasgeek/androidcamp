@@ -31,4 +31,12 @@ $(document).ready(function(){
         $("#comment_msg").html(errorMsg);
         $("#comment_msg").show();
     });
+
+    // voting
+    $(".vote_form").bind('ajax:success', function(e, data, status, xhr){
+        // TODO hide the button
+    });
+    $(".vote_form").bind('ajax:error', function(e, xhr, status, error){
+        // just leave the button alone
+    });
 });
