@@ -17,8 +17,7 @@ $(document).ready(function(){
                               '</div>');
     });
     $("#comment_form").bind('ajax:error', function(e, xhr, status, error){
-        var errorMsg = "akash";
-        console.log("unproc entitry");
+        var errorMsg;
         if(xhr.responseText == "not authorized") {
             errorMsg = "Please login to comment"
         }
