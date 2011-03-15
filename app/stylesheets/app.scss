@@ -122,6 +122,28 @@ $droid-green: #4E7000;
         font-family: Serif;
     }
     .comments {
-
+        @include column(24, true);
+        .comment {
+            @include column(12, true);
+            clear: both;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-top: 1px solid #DDD;
+            .author_meta {
+                text-transform: uppercase;
+                font-size: 90%;
+            }
+            .comment_text {
+                
+            }
+        }
+    }
+    .comment_form {
+        @include column(24, true);
+        textarea {height: 60px;}
+        #comment_msg {
+            @include column(12, true);
+        }
     }
 }
+

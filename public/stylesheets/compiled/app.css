@@ -1280,3 +1280,60 @@ a img {
   font-size: 120%;
   font-family: Serif;
 }
+/* line 124, ../../../app/stylesheets/app.scss */
+.talk .comments {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .talk .comments {
+  overflow-x: hidden;
+}
+/* line 126, ../../../app/stylesheets/app.scss */
+.talk .comments .comment {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #DDD;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .talk .comments .comment {
+  overflow-x: hidden;
+}
+/* line 132, ../../../app/stylesheets/app.scss */
+.talk .comments .comment .author_meta {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+/* line 141, ../../../app/stylesheets/app.scss */
+.talk .comment_form {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 950px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .talk .comment_form {
+  overflow-x: hidden;
+}
+/* line 143, ../../../app/stylesheets/app.scss */
+.talk .comment_form textarea {
+  height: 60px;
+}
+/* line 144, ../../../app/stylesheets/app.scss */
+.talk .comment_form #comment_msg {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .talk .comment_form #comment_msg {
+  overflow-x: hidden;
+}
