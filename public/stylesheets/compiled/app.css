@@ -1323,8 +1323,9 @@ a img {
   overflow-x: hidden;
 }
 /* line 143, ../../../app/stylesheets/app.scss */
-.talk .comment_form textarea {
+.talk .comment_form #comment_description {
   height: 60px;
+  width: 455px;
 }
 /* line 144, ../../../app/stylesheets/app.scss */
 .talk .comment_form #comment_msg {

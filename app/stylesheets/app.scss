@@ -140,7 +140,7 @@ $droid-green: #4E7000;
     }
     .comment_form {
         @include column(24, true);
-        textarea {height: 60px;}
+        #comment_description {height: 60px; width: 455px;}
         #comment_msg {
             @include column(12, true);
         }
