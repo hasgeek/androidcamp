@@ -26,11 +26,19 @@ class TalksController < ApplicationController
 
   def create
     @talk = Talk.new(params[:talk])
-
-    if @talk.save
-      redirect_to(@talk, :notice => 'Talk was successfully created.')
+    @talk.user_id = @current_user.id
+    if request.xhr?
+      if @talk.save
+        render :json => @talk
+      else
+        render :json => @talk.errors, :status => :unprocessable_entity
+      end
     else
-      render :action => "new"
+      if @talk.save
+        redirect_to(@talk, :notice => 'Talk was successfully created.')
+      else
+        render :action => "new"
+      end
     end
   end
 
