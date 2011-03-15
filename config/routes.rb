@@ -1,11 +1,11 @@
 Androidcamp::Application.routes.draw do
 
   get "main/home"
-
   get "main/login"
 
   resources :talks
   resources :comments
+  resources :votes
   root :to => "talks#home"
 
   match "auth/:provider/callback" => "sessions#create"
