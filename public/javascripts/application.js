@@ -4,19 +4,19 @@
 $(document).ready(function(){
     // talks#show
     $("#comment_msg").hide();
-    $("#comment_form").bind('ajax:success', function(e, data, status, xhr){
+    $(".comment_form").bind('ajax:success', function(e, data, status, xhr){
         var res = jQuery.parseJSON(data);
         console.log(res);
         $(".comments").append('<div class="comment">' +
                               '<div class="author_meta">' +
-                              res['comment']['user_name'] +
+                              res['comment']['user']['name'] +
                               '</div>' +
                               '<div class="description">' +
                               res['comment']['description'] +
                               '</div>' +
                               '</div>');
     });
-    $("#comment_form").bind('ajax:error', function(e, xhr, status, error){
+    $(".comment_form").bind('ajax:error', function(e, xhr, status, error){
         var errorMsg;
         if(xhr.responseText == "not authorized") {
             errorMsg = "Please login to comment"
