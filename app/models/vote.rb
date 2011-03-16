@@ -5,8 +5,8 @@ class Vote < ActiveRecord::Base
   validates_presence_of :user_id
   validates_presence_of :talk_id
 
-  before_create :increment_votes_count
-  before_destroy :decrement_votes_count
+  before_save :increment_votes_count
+  after_destroy :decrement_votes_count
   
   private
   def increment_votes_count

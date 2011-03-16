@@ -7,7 +7,7 @@ class Comment < ActiveRecord::Base
   validates_presence_of :description, :message=>"Saying nothing doesn't require a comment ;)"
 
   before_create :increment_comments_count
-  before_destroy :decrement_comments_count
+  after_destroy :decrement_comments_count
   
   private
   def increment_comments_count
