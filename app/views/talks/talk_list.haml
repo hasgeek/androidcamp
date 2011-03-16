@@ -8,11 +8,13 @@
     \/
     =link_to "Submit", new_talk_path
 
-
-  - @talks.each do |t|
-    .talk
-      .title
-        = link_to t.title, talk_path(t)
+  #talk_list
+    - @talks.each do |t|
+      .talk
+        .title
+          = link_to t.title, talk_path(t)
+        .author_meta
+          = t.user.name
 
 #activity
   .block_title

@@ -73,6 +73,17 @@ $droid-green: #4E7000;
             text-transform: uppercase;
         }
     }
+    #talk_list {
+        margin-top: 20px;
+        .talk {
+            .title {
+                a {
+                    color: #06C;
+                    font-size: 110%;
+                }
+            }
+        }
+    }
 }
 
 #activity {
@@ -96,7 +107,7 @@ $droid-green: #4E7000;
     @include fancy-button(#9c3, 14px, 2px);
 }
 
-.talk {
+.show_talk {
     @include column(24, true);
     margin-top: 30px;
     clear:both;

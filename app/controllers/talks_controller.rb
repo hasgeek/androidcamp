@@ -4,13 +4,13 @@ class TalksController < ApplicationController
   before_filter :current_user, :only =>[:index, :show]
 
   def newest
-    @talks = Talk.order("created_at DESC")
+    @talks = Talk.includes(:user).order("created_at DESC")
     render :talk_list
   end
   
   #shows popular talks
   def index
-    @talks = Talk.order("votes_count DESC")
+    @talks = Talk.includes(:user).order("votes_count DESC")
     render :talk_list
   end
 
