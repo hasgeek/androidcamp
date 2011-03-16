@@ -1080,7 +1080,7 @@ a img {
 }
 /* line 15, ../../../app/stylesheets/app.scss */
 #wrapper #user_info .login_link {
-  font-size: 120%;
+  font-size: 100%;
   margin-top: 4px;
   color: #333;
 }
@@ -1159,18 +1159,25 @@ a img {
   font-size: 85%;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 3px;
 }
 /* line 76, ../../../app/stylesheets/app.scss */
+#talks #nav .current_page {
+  border-radius: 4px;
+  color: #FFF;
+  background: #F66;
+}
+/* line 82, ../../../app/stylesheets/app.scss */
 #talks #talk_list {
   margin-top: 20px;
 }
-/* line 80, ../../../app/stylesheets/app.scss */
+/* line 86, ../../../app/stylesheets/app.scss */
 #talks #talk_list .talk .title a {
   color: #06C;
   font-size: 110%;
 }
 
-/* line 89, ../../../app/stylesheets/app.scss */
+/* line 95, ../../../app/stylesheets/app.scss */
 #activity {
   display: inline;
   float: left;
@@ -1182,18 +1189,18 @@ a img {
   overflow-x: hidden;
 }
 
-/* line 94, ../../../app/stylesheets/app.scss */
+/* line 100, ../../../app/stylesheets/app.scss */
 #talks .block_title, #activity .block_title {
   font-size: 120%;
   color: #777;
 }
 
-/* line 101, ../../../app/stylesheets/app.scss */
+/* line 107, ../../../app/stylesheets/app.scss */
 #activity .block_title {
   text-align: center;
 }
 
-/* line 106, ../../../app/stylesheets/app.scss */
+/* line 112, ../../../app/stylesheets/app.scss */
 .submit_button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -1257,7 +1264,7 @@ a img {
   color: white;
 }
 
-/* line 110, ../../../app/stylesheets/app.scss */
+/* line 116, ../../../app/stylesheets/app.scss */
 .show_talk {
   display: inline;
   float: left;
@@ -1270,26 +1277,26 @@ a img {
 * html .show_talk {
   overflow-x: hidden;
 }
-/* line 115, ../../../app/stylesheets/app.scss */
+/* line 121, ../../../app/stylesheets/app.scss */
 .show_talk .talk_meta {
   font-size: 80%;
   color: #777;
 }
-/* line 120, ../../../app/stylesheets/app.scss */
+/* line 126, ../../../app/stylesheets/app.scss */
 .show_talk .title {
   font-size: 140%;
 }
-/* line 124, ../../../app/stylesheets/app.scss */
+/* line 130, ../../../app/stylesheets/app.scss */
 .show_talk .description {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 129, ../../../app/stylesheets/app.scss */
+/* line 135, ../../../app/stylesheets/app.scss */
 .show_talk .comment_count {
   font-size: 120%;
   font-family: Serif;
 }
-/* line 133, ../../../app/stylesheets/app.scss */
+/* line 139, ../../../app/stylesheets/app.scss */
 .show_talk .comments {
   display: inline;
   float: left;
@@ -1300,7 +1307,7 @@ a img {
 * html .show_talk .comments {
   overflow-x: hidden;
 }
-/* line 135, ../../../app/stylesheets/app.scss */
+/* line 141, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment {
   display: inline;
   float: left;
@@ -1316,17 +1323,17 @@ a img {
 * html .show_talk .comments .comment {
   overflow-x: hidden;
 }
-/* line 142, ../../../app/stylesheets/app.scss */
+/* line 148, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .author_meta {
   text-transform: uppercase;
   font-size: 80%;
   color: #999;
 }
-/* line 147, ../../../app/stylesheets/app.scss */
+/* line 153, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_text {
   color: #666;
 }
-/* line 152, ../../../app/stylesheets/app.scss */
+/* line 158, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form {
   display: inline;
   float: left;
@@ -1337,12 +1344,12 @@ a img {
 * html .show_talk .comment_form {
   overflow-x: hidden;
 }
-/* line 154, ../../../app/stylesheets/app.scss */
+/* line 160, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_description {
   height: 60px;
   width: 455px;
 }
-/* line 155, ../../../app/stylesheets/app.scss */
+/* line 161, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_msg {
   display: inline;
   float: left;

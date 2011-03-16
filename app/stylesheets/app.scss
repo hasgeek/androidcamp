@@ -13,7 +13,7 @@ $droid-green: #4E7000;
         @include column(24,true);
         text-align: right;
         .login_link {
-            font-size: 120%;
+            font-size: 100%;
             margin-top: 4px;
             color: #333;
         }
@@ -71,6 +71,12 @@ $droid-green: #4E7000;
             font-size: 85%;
             text-decoration: none;
             text-transform: uppercase;
+            padding: 3px;
+        }
+        .current_page {
+            border-radius: 4px;
+            color: #FFF;
+            background: #F66;
         }
     }
     #talk_list {
