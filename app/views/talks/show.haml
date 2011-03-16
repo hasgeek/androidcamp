@@ -1,4 +1,12 @@
-= render "quick_nav"
+#talks
+  .block_title
+    Talk proposals
+  #nav
+    =link_to "Popular", popular_talks_url
+    \/
+    =link_to "New", newest_talks_url
+    \/
+    =link_to "Submit", new_talk_path
 
 .talk
   .title
