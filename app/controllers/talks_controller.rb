@@ -1,11 +1,13 @@
 class TalksController < ApplicationController
 
-  before_filter :auth_user, :except => [:index, :show, :home]
+  before_filter :auth_user, :except => [:index, :show, :popular, :newest]
   before_filter :current_user, :only =>[:index, :show]
 
-  def home
+  def newest
+    @talks = Talk.all
   end
   
+  #shows popular talks
   def index
     @talks = Talk.all
   end

@@ -129,12 +129,14 @@ $droid-green: #4E7000;
             margin-top: 10px;
             margin-bottom: 10px;
             border-top: 1px solid #DDD;
+            font-size: 90%;
             .author_meta {
                 text-transform: uppercase;
-                font-size: 90%;
+                font-size: 80%;
+                color: #999;
             }
             .comment_text {
-                
+                color: #666;
             }
         }
     }

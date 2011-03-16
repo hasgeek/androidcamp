@@ -2,12 +2,16 @@ Androidcamp::Application.routes.draw do
 
   get "main/home"
   get "main/login"
-
+  
+  get "talks/newest"
+  match "popular" => "talks#index", :as=> :popular_talks
+  
   resources :talks
   resources :comments
   resources :votes
-  root :to => "talks#home"
+  root :to => "talks#index"
 
+ 
   match "auth/:provider/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
   match "/login" => "main#login", :as => :ask_login

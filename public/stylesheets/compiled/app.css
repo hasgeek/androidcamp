@@ -1301,17 +1301,23 @@ a img {
   margin-top: 10px;
   margin-bottom: 10px;
   border-top: 1px solid #DDD;
+  font-size: 90%;
 }
 /* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .talk .comments .comment {
   overflow-x: hidden;
 }
-/* line 132, ../../../app/stylesheets/app.scss */
+/* line 133, ../../../app/stylesheets/app.scss */
 .talk .comments .comment .author_meta {
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 80%;
+  color: #999;
 }
-/* line 141, ../../../app/stylesheets/app.scss */
+/* line 138, ../../../app/stylesheets/app.scss */
+.talk .comments .comment .comment_text {
+  color: #666;
+}
+/* line 143, ../../../app/stylesheets/app.scss */
 .talk .comment_form {
   display: inline;
   float: left;
@@ -1322,12 +1328,12 @@ a img {
 * html .talk .comment_form {
   overflow-x: hidden;
 }
-/* line 143, ../../../app/stylesheets/app.scss */
+/* line 145, ../../../app/stylesheets/app.scss */
 .talk .comment_form #comment_description {
   height: 60px;
   width: 455px;
 }
-/* line 144, ../../../app/stylesheets/app.scss */
+/* line 146, ../../../app/stylesheets/app.scss */
 .talk .comment_form #comment_msg {
   display: inline;
   float: left;
