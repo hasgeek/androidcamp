@@ -1,10 +1,9 @@
 Androidcamp::Application.routes.draw do
 
-  get "main/home"
   get "main/login"
   
-  get "talks/newest"
-  match "popular" => "talks#index", :as=> :popular_talks
+  match "talks/popular" => "talks#index", :as=> :popular_talks
+  match "talks/newest" => "talks#newest", :as=> :newest_talks
   
   resources :talks
   resources :comments
