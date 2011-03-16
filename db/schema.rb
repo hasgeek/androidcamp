@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20110316082540) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-    t.integer  "comments_count"
+    t.integer  "comments_count", :default => 0
   end
 
   create_table "users", :force => true do |t|
