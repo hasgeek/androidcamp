@@ -5,12 +5,14 @@ class TalksController < ApplicationController
 
   def newest
     @talks = Talk.includes(:user).order("created_at DESC")
+    @comments = Comment.includes(:user, :talk).order("created_at DESC").limit(10)
     render :talk_list
   end
   
   #shows popular talks
   def index
     @talks = Talk.includes(:user).order("votes_count DESC")
+    @comments = Comment.includes(:user, :talk).order("created_at DESC").limit(10)
     render :talk_list
   end
 

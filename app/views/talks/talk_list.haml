@@ -25,3 +25,9 @@
 #activity
   .block_title
     Recent comments
+  .comment_list
+    -@comments.each do |c|
+      .comment
+        = c.user.name
+        on
+        = c.talk.title
