@@ -7,7 +7,6 @@ class CommentsController < ApplicationController
     @comment.user_id = @current_user.id
     if request.xhr?
       if @comment.save
-        @comment.user_name = @comment.user.name
         render :text => @comment.to_json(:include=>{:user=>{:only=>[:name]}})
       else
         render :json => @comment.errors, :status => :unprocessable_entity

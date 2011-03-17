@@ -17,8 +17,7 @@ class TalksController < ApplicationController
   end
 
   def show
-    @talk = Talk.find(params[:id])
-    @comment = @talk.comments.build
+    @talk = Talk.includes(:user, :comments=>[:user]).find(params[:id])
   end
 
   def new
@@ -33,6 +32,7 @@ class TalksController < ApplicationController
   def create
     @talk = Talk.new(params[:talk])
     @talk.user_id = @current_user.id
+
     if request.xhr?
       if @talk.save
         render :json => @talk

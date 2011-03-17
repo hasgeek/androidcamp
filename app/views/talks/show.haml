@@ -33,7 +33,7 @@
           = c.description
 
   - if @current_user
-    - form_for @comment, :remote=>true, :html=>{:'data-type'=>'html', :class=>'comment_form'} do |f|
+    = form_for @talk.comments.build, :remote=>true, :html=>{:'data-type'=>'html', :class=>'comment_form'} do |f|
       #comment_msg
       = @current_user.name
       says

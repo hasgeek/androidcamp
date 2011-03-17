@@ -7,14 +7,12 @@ $(document).ready(function(){
     $(".comment_form").bind('ajax:success', function(e, data, status, xhr){
         var res = jQuery.parseJSON(data);
         console.log(res);
-        $(".comments").append('<div class="comment">' +
-                              '<div class="author_meta">' +
-                              res['comment']['user']['name'] +
-                              '</div>' +
-                              '<div class="description">' +
-                              res['comment']['description'] +
-                              '</div>' +
-                              '</div>');
+        var htmlDump = '<div class="comment">' +
+            '<div class="author_meta">' + res['comment']['user']['name'] +'</div>' +
+            '<div class="comment_text">' + res['comment']['description'] + '</div>' +
+            '</div>';
+        console.log(htmlDump);
+        $(".comments").append(htmlDump);
     });
     $(".comment_form").bind('ajax:error', function(e, xhr, status, error){
         var errorMsg;
@@ -35,6 +33,7 @@ $(document).ready(function(){
     // voting
     $(".voting_form").bind('ajax:success', function(e, data, status, xhr){
         // TODO hide the button
+
     });
     $(".voting_form").bind('ajax:error', function(e, xhr, status, error){
         // just leave the button alone
