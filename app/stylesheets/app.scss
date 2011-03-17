@@ -88,6 +88,15 @@ $droid-green: #4E7000;
                     font-size: 110%;
                 }
             }
+            .talk_meta {
+                font-size: 85%;
+                .votes {
+                    color: #555;
+                }
+                .author_meta {
+                    color: #919191;
+                }
+            }
         }
     }
 }
@@ -119,8 +128,13 @@ $droid-green: #4E7000;
     clear:both;
 
     .talk_meta {
-        font-size: 80%;
-        color: #777;
+        font-size: 85%;
+        .votes {
+            color: #555;
+        }
+        .author_meta {
+            color: #919191;
+        }
     }
 
     .title {

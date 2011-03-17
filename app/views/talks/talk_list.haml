@@ -19,8 +19,14 @@
       .talk
         .title
           = link_to t.title, talk_path(t)
-        .author_meta
-          = t.user.name
+        .talk_meta
+          %span.votes
+            = t.votes_count
+            votes,
+          %span.author_meta
+            submitted by
+            = t.user.name
+          
 
 #activity
   .block_title

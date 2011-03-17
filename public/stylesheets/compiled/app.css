@@ -1176,8 +1176,20 @@ a img {
   color: #06C;
   font-size: 110%;
 }
+/* line 91, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_meta {
+  font-size: 85%;
+}
+/* line 93, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_meta .votes {
+  color: #555;
+}
+/* line 96, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_meta .author_meta {
+  color: #919191;
+}
 
-/* line 95, ../../../app/stylesheets/app.scss */
+/* line 104, ../../../app/stylesheets/app.scss */
 #activity {
   display: inline;
   float: left;
@@ -1189,18 +1201,18 @@ a img {
   overflow-x: hidden;
 }
 
-/* line 100, ../../../app/stylesheets/app.scss */
+/* line 109, ../../../app/stylesheets/app.scss */
 #talks .block_title, #activity .block_title {
   font-size: 120%;
   color: #777;
 }
 
-/* line 107, ../../../app/stylesheets/app.scss */
+/* line 116, ../../../app/stylesheets/app.scss */
 #activity .block_title {
   text-align: center;
 }
 
-/* line 112, ../../../app/stylesheets/app.scss */
+/* line 121, ../../../app/stylesheets/app.scss */
 .submit_button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -1264,7 +1276,7 @@ a img {
   color: white;
 }
 
-/* line 116, ../../../app/stylesheets/app.scss */
+/* line 125, ../../../app/stylesheets/app.scss */
 .show_talk {
   display: inline;
   float: left;
@@ -1277,26 +1289,33 @@ a img {
 * html .show_talk {
   overflow-x: hidden;
 }
-/* line 121, ../../../app/stylesheets/app.scss */
+/* line 130, ../../../app/stylesheets/app.scss */
 .show_talk .talk_meta {
-  font-size: 80%;
-  color: #777;
+  font-size: 85%;
 }
-/* line 126, ../../../app/stylesheets/app.scss */
+/* line 132, ../../../app/stylesheets/app.scss */
+.show_talk .talk_meta .votes {
+  color: #555;
+}
+/* line 135, ../../../app/stylesheets/app.scss */
+.show_talk .talk_meta .author_meta {
+  color: #919191;
+}
+/* line 140, ../../../app/stylesheets/app.scss */
 .show_talk .title {
   font-size: 140%;
 }
-/* line 130, ../../../app/stylesheets/app.scss */
+/* line 144, ../../../app/stylesheets/app.scss */
 .show_talk .description {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 135, ../../../app/stylesheets/app.scss */
+/* line 149, ../../../app/stylesheets/app.scss */
 .show_talk .comment_count {
   font-size: 120%;
   font-family: Serif;
 }
-/* line 139, ../../../app/stylesheets/app.scss */
+/* line 153, ../../../app/stylesheets/app.scss */
 .show_talk .comments {
   display: inline;
   float: left;
@@ -1307,7 +1326,7 @@ a img {
 * html .show_talk .comments {
   overflow-x: hidden;
 }
-/* line 141, ../../../app/stylesheets/app.scss */
+/* line 155, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment {
   display: inline;
   float: left;
@@ -1323,17 +1342,17 @@ a img {
 * html .show_talk .comments .comment {
   overflow-x: hidden;
 }
-/* line 148, ../../../app/stylesheets/app.scss */
+/* line 162, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .author_meta {
   text-transform: uppercase;
   font-size: 80%;
   color: #999;
 }
-/* line 153, ../../../app/stylesheets/app.scss */
+/* line 167, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_text {
   color: #666;
 }
-/* line 158, ../../../app/stylesheets/app.scss */
+/* line 172, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form {
   display: inline;
   float: left;
@@ -1344,12 +1363,12 @@ a img {
 * html .show_talk .comment_form {
   overflow-x: hidden;
 }
-/* line 160, ../../../app/stylesheets/app.scss */
+/* line 174, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_description {
   height: 60px;
   width: 455px;
 }
-/* line 161, ../../../app/stylesheets/app.scss */
+/* line 175, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_msg {
   display: inline;
   float: left;

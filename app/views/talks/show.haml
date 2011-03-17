@@ -12,8 +12,12 @@
   .title
     = @talk.title
   .talk_meta
-    Submitted by 
-    = @talk.user.name
+    %span.votes
+      = @talk.votes_count
+      votes
+    %span.author_meta
+      submitted by 
+      = @talk.user.name
   .description
     = @talk.description
   
