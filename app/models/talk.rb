@@ -7,7 +7,7 @@ class Talk < ActiveRecord::Base
   validates_presence_of :description
 
   def posted_on
-    self.created_at.strftime("%I: %p")
+    self.created_at.strftime("%d-%b-%Y, %I:%M %p ")
   end
   
 end
