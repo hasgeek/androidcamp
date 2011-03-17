@@ -36,8 +36,10 @@
       comments
     - @talk.comments.each do |c|
       .comment
-        .author_meta
+        .comment_meta
           = c.user.name unless c.user.nil?
+          @
+          = link_to @talk.created_at, talk_path(@talk, :anchor=>"comment_"+c.id.to_s), :name=>"comment_"+c.id.to_s
         .comment_text
           = c.description
 

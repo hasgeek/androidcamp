@@ -2,7 +2,7 @@
 
 $droid-green: #4E7000;
 
-#wrapper {
+.wrapper {
     @include blueprint(true);
     @include container;
     
@@ -58,7 +58,7 @@ $droid-green: #4E7000;
         color: $droid-green;
         font-family: 'Droid Sans', arial, sans-serif;
         a {
-            color: $droid-green;
+            @include link-colors($droid-green);
         }
     }
 }
@@ -67,7 +67,7 @@ $droid-green: #4E7000;
     @include column(15);
     #nav {
         a {
-            color: #F66;
+            @include link-colors(#F66);
             font-size: 85%;
             text-decoration: none;
             text-transform: uppercase;
@@ -92,7 +92,7 @@ $droid-green: #4E7000;
                 
                 .title {
                     a {
-                        color: #06C;
+                        @include link-colors(#06C);
                         font-size: 110%;
                     }
                 }
@@ -113,18 +113,21 @@ $droid-green: #4E7000;
 
 #activity {
     @include column(8,true);
+    .comment_list {
+        font-size: 85%;
+        color: #777;
+        margin-top: 20px;
+        a{
+            @include link-colors(#999);
+        }
+    }
+    
 }
 
 #talks, #activity {
     .block_title {
         font-size: 120%;
         color: #777;
-    }
-}
-
-#activity {
-    .block_title {
-        text-align: center;
     }
 }
 
@@ -187,10 +190,14 @@ $droid-green: #4E7000;
             margin-bottom: 10px;
             border-top: 1px solid #DDD;
             font-size: 90%;
-            .author_meta {
+            .comment_meta {
                 text-transform: uppercase;
                 font-size: 80%;
                 color: #999;
+                a {
+                    @include link-colors(#999);
+                    text-decoration: none;
+                }
             }
             .comment_text {
                 color: #666;
