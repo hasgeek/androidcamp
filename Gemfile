@@ -13,6 +13,7 @@ gem 'fancy-buttons'
 gem 'jquery-rails'
 gem 'omniauth'
 gem 'oa-openid'
+gem 'cancan'
 
 group :development, :test do
   gem 'cucumber-rails'
