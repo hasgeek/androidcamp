@@ -5,6 +5,8 @@ class Vote < ActiveRecord::Base
   validates_presence_of :user_id
   validates_presence_of :talk_id
 
+  validates_uniqueness_of :user_id, :scope => :talk_id
+  
   before_save :increment_votes_count
   after_destroy :decrement_votes_count
   
