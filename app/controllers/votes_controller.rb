@@ -6,15 +6,6 @@ class VotesController < ApplicationController
     @vote = Vote.new(params[:vote])
     @vote.user_id = @current_user.id
 
-    if @vote.valid?
-      votes = @vote.talk.votes.where(:user_id=>@vote.user_id)
-      if votes.count > 0
-        @vote = votes.first
-        render :json => @vote
-        return
-      end
-    end
-
     if request.xhr?
       if @vote.save
         render :json => @vote
