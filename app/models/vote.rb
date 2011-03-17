@@ -6,7 +6,8 @@ class Vote < ActiveRecord::Base
   validates_presence_of :talk_id
 
   validates_uniqueness_of :user_id, :scope => :talk_id
-  
+
+  # TODO counter_cache broken in rails v3.0.5
   before_save :increment_votes_count
   after_destroy :decrement_votes_count
   

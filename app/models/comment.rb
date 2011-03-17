@@ -5,7 +5,7 @@ class Comment < ActiveRecord::Base
   validates_presence_of :user_id
   validates_presence_of :talk_id
   validates_presence_of :description, :message=>"Saying nothing doesn't require a comment ;)"
-
+  # TODO counter_cache broken in rails v3.0.5
   before_create :increment_comments_count
   after_destroy :decrement_comments_count
   
