@@ -8,6 +8,10 @@ class Comment < ActiveRecord::Base
   # TODO counter_cache broken in rails v3.0.5
   before_create :increment_comments_count
   after_destroy :decrement_comments_count
+
+  def posted_on
+    self.created_at.strftime("%d-%b-%Y, %I:%M %p ")
+  end
   
   private
   def increment_comments_count

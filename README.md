@@ -1,12 +1,13 @@
 AndroidCamp.in
 ==============
 
-website for android camp.
+talk proposal website for androidcamp.
 
 TODO
 -----
 
-* Add comment to list when POST is successful
-* Style pages
-* Populate recent comments block
-* Add voting buttons (remote to Votes controller)
+* Add roles and permissions to edit content (proposals and comments)
+* Fix datetime in comments in talks#show
+* Style or change recent activity block (in talks/talk_list.haml)
+
+and some styling everywhere else on the site
