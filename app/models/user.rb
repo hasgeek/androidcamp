@@ -12,5 +12,10 @@ class User < ActiveRecord::Base
       user.email = auth["user_info"]["email"]
     end
   end
+
+  def voted_for?(talkID)
+    return true unless Talk.find(talkID).votes.exists?(:user_id=>self.id)
+    return false
+  end
   
 end

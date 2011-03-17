@@ -17,7 +17,7 @@
   #talk_list
     - @talks.each do |t|
       .talk
-        - if user_logged_in?
+        - if user_logged_in? and @current_user.voted_for?(t.id)
           = form_for t.votes.build(:user_id=>current_user.id), :remote=>true, :html=>{:'data-type'=>'html', :class=>'voting_form'} do |f|
             = token_tag
             = f.hidden_field :talk_id, :value => t.id
