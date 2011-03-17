@@ -1317,43 +1317,83 @@ a img {
   overflow-x: hidden;
 }
 /* line 140, ../../../app/stylesheets/app.scss */
-.show_talk .talk_meta {
-  font-size: 85%;
+.show_talk .voting_form {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  vertical-align: top;
 }
-/* line 142, ../../../app/stylesheets/app.scss */
-.show_talk .talk_meta .votes {
-  color: #555;
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .show_talk .voting_form {
+  overflow-x: hidden;
 }
 /* line 145, ../../../app/stylesheets/app.scss */
-.show_talk .talk_meta .author_meta {
-  color: #919191;
-}
-/* line 150, ../../../app/stylesheets/app.scss */
-.show_talk .title {
-  font-size: 140%;
-}
-/* line 154, ../../../app/stylesheets/app.scss */
-.show_talk .description {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-/* line 159, ../../../app/stylesheets/app.scss */
-.show_talk .comment_count {
-  font-size: 120%;
-  font-family: Serif;
-}
-/* line 163, ../../../app/stylesheets/app.scss */
-.show_talk .comments {
+.show_talk .talk_details {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 950px;
+  width: 910px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .show_talk .talk_details {
+  overflow-x: hidden;
+}
+/* line 147, ../../../app/stylesheets/app.scss */
+.show_talk .talk_details .title {
+  font-size: 140%;
+}
+/* line 150, ../../../app/stylesheets/app.scss */
+.show_talk .talk_details .talk_meta {
+  font-size: 85%;
+}
+/* line 152, ../../../app/stylesheets/app.scss */
+.show_talk .talk_details .talk_meta .votes {
+  color: #555;
+}
+/* line 155, ../../../app/stylesheets/app.scss */
+.show_talk .talk_details .talk_meta .author_meta {
+  color: #919191;
+}
+/* line 161, ../../../app/stylesheets/app.scss */
+.show_talk .description_wrapper {
+  padding-left: 40px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 910px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .show_talk .description_wrapper {
+  overflow-x: hidden;
+}
+/* line 165, ../../../app/stylesheets/app.scss */
+.show_talk .description_wrapper .description {
+  padding: 5px;
+  border: 1px solid #CCE6B3;
+  background: #E6F1DA;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 174, ../../../app/stylesheets/app.scss */
+.show_talk .comments {
+  padding-left: 40px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 830px;
 }
 /* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .show_talk .comments {
   overflow-x: hidden;
 }
-/* line 165, ../../../app/stylesheets/app.scss */
+/* line 178, ../../../app/stylesheets/app.scss */
+.show_talk .comments .comment_count {
+  font-size: 120%;
+  font-family: Serif;
+  font-style: italic;
+}
+/* line 183, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment {
   display: inline;
   float: left;
@@ -1369,33 +1409,35 @@ a img {
 * html .show_talk .comments .comment {
   overflow-x: hidden;
 }
-/* line 172, ../../../app/stylesheets/app.scss */
+/* line 190, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .author_meta {
   text-transform: uppercase;
   font-size: 80%;
   color: #999;
 }
-/* line 177, ../../../app/stylesheets/app.scss */
+/* line 195, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_text {
   color: #666;
 }
-/* line 182, ../../../app/stylesheets/app.scss */
+/* line 200, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form {
+  padding-left: 40px;
   display: inline;
   float: left;
   margin-right: 0;
-  width: 950px;
+  width: 910px;
+  margin-top: 20px;
 }
 /* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .show_talk .comment_form {
   overflow-x: hidden;
 }
-/* line 184, ../../../app/stylesheets/app.scss */
+/* line 204, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_description {
   height: 60px;
   width: 455px;
 }
-/* line 185, ../../../app/stylesheets/app.scss */
+/* line 205, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_msg {
   display: inline;
   float: left;

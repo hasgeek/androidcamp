@@ -9,17 +9,26 @@
     =link_to "Submit", new_talk_path
 
 .show_talk
-  .title
-    = @talk.title
-  .talk_meta
-    %span.votes
-      = @talk.votes_count
-      votes
-    %span.author_meta
-      submitted by 
-      = @talk.user.name
-  .description
-    = @talk.description
+  - if(user_logged_in? and @current_user.voted_for?(@talk.id))
+    = form_for @talk.votes.build(:user_id=>current_user.id), :remote=>true, :html=>{:'data-type'=>'html', :class=>'voting_form'} do |f|
+      = token_tag
+      = f.hidden_field :talk_id, :value => @talk.id
+      = image_submit_tag 'vote_up.png', :class=>"vote_button"
+  - else
+    .voting_form &nbsp;
+  .talk_details  
+    .title
+      = @talk.title
+    .talk_meta
+      %span.votes
+        = @talk.votes_count
+        votes
+      %span.author_meta
+        submitted by 
+        = @talk.user.name
+  .description_wrapper
+    .description
+      = @talk.description
   
   .comments
     .comment_count

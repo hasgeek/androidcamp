@@ -136,32 +136,50 @@ $droid-green: #4E7000;
     @include column(24, true);
     margin-top: 30px;
     clear:both;
-
-    .talk_meta {
-        font-size: 85%;
-        .votes {
-            color: #555;
+    
+    .voting_form {
+        @include column(1);
+        vertical-align: top;
+    }
+    
+    .talk_details {
+        @include column(23, true);
+        .title {
+            font-size: 140%;
         }
-        .author_meta {
-            color: #919191;
+        .talk_meta {
+            font-size: 85%;
+            .votes {
+                color: #555;
+            }
+            .author_meta {
+                color: #919191;
+            }
         }
     }
 
-    .title {
-        font-size: 140%;
+    .description_wrapper {
+        @include prepend(1);
+        @include column(23, true);
+        
+        .description {
+            padding: 5px;
+            border: 1px solid #CCE6B3;
+            background: #E6F1DA;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 
-    .description {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .comment_count {
-        font-size: 120%;
-        font-family: Serif;
-    }
     .comments {
-        @include column(24, true);
+        @include prepend(1);
+        @include column(21, true);
+        
+        .comment_count {
+            font-size: 120%;
+            font-family: Serif;
+            font-style: italic;
+        }
         .comment {
             @include column(12, true);
             clear: both;
@@ -180,7 +198,9 @@ $droid-green: #4E7000;
         }
     }
     .comment_form {
-        @include column(24, true);
+        @include prepend(1);
+        @include column(23, true);
+        margin-top: 20px;
         #comment_description {height: 60px; width: 455px;}
         #comment_msg {
             @include column(12, true);
