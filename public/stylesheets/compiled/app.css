@@ -1208,7 +1208,7 @@ a img {
   font-size: 85%;
 }
 /* line 102, ../../../app/stylesheets/app.scss */
-#talks #talk_list .talk .talk_details .talk_meta .votes {
+#talks #talk_list .talk .talk_details .talk_meta .votes, #talks #talk_list .talk .talk_details .talk_meta .votes_label {
   color: #555;
 }
 /* line 105, ../../../app/stylesheets/app.scss */

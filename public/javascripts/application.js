@@ -32,8 +32,10 @@ $(document).ready(function(){
 
     // voting
     $(".voting_form").bind('ajax:success', function(e, data, status, xhr){
-        // TODO hide the button
-        console.log("success");
+
+        var currentVotes = parseInt($(this).next().find('.votes').html().trim());
+
+        $(this).next().find('.votes').html(currentVotes+1);
         $(this).find('.vote_button').css('visibility', 'hidden');
     });
     $(".voting_form").bind('ajax:error', function(e, xhr, status, error){
