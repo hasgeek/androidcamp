@@ -9,6 +9,9 @@ class ApplicationController < ActionController::Base
   private
 
   def current_user
+    # NOTE: Have to check is the user exists.
+    # Encountered an error when the session is valid but a db:reset
+    # had been done
     if session[:user_id] and User.exists? session[:user_id]
       @current_user = User.find(session[:user_id])
     else
