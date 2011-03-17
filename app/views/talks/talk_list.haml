@@ -17,9 +17,13 @@
   #talk_list
     - @talks.each do |t|
       .talk
-        = form_for t.votes.build(:user_id=>current_user.id), :remote=>true, :html=>{:'data-type'=>'html', :class=>'voting_form'} do |f|
-          = f.hidden_field :talk_id, :value => t.id
-          = f.submit
+        - if user_logged_in?
+          = form_for t.votes.build(:user_id=>current_user.id), :remote=>true, :html=>{:'data-type'=>'html', :class=>'voting_form'} do |f|
+            = token_tag
+            = f.hidden_field :talk_id, :value => t.id
+            = image_submit_tag 'vote_up.png', :class=>"vote_button"
+        - else
+          .voting_form &nbsp;
         .talk_details
           .title
             = link_to t.title, talk_path(t)

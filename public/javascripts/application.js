@@ -33,9 +33,11 @@ $(document).ready(function(){
     // voting
     $(".voting_form").bind('ajax:success', function(e, data, status, xhr){
         // TODO hide the button
-
+        console.log("success");
+        $(this).find('.vote_button').css('visibility', 'hidden');
     });
     $(".voting_form").bind('ajax:error', function(e, xhr, status, error){
         // just leave the button alone
+        console.log(xhr,error);
     });
 });
