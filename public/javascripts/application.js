@@ -8,7 +8,7 @@ $(document).ready(function(){
         var res = jQuery.parseJSON(data);
         console.log(res);
         var htmlDump = '<div class="comment">' +
-            '<div class="author_meta">' + res['comment']['user']['name'] +'</div>' +
+            '<div class="comment_meta">' + res['comment']['user']['name'] +'</div>' +
             '<div class="comment_text">' + res['comment']['description'] + '</div>' +
             '</div>';
         console.log(htmlDump);
