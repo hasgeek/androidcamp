@@ -82,19 +82,29 @@ $droid-green: #4E7000;
     #talk_list {
         margin-top: 20px;
         .talk {
-            .title {
-                a {
-                    color: #06C;
-                    font-size: 110%;
-                }
+            clear: both;
+            .voting_form {
+                @include column(1);
+                vertical-align: top;
             }
-            .talk_meta {
-                font-size: 85%;
-                .votes {
-                    color: #555;
+            .talk_details {
+                @include column(12, true);
+                
+                .title {
+                    a {
+                        color: #06C;
+                        font-size: 110%;
+                    }
                 }
-                .author_meta {
-                    color: #919191;
+
+                .talk_meta {
+                    font-size: 85%;
+                    .votes {
+                        color: #555;
+                    }
+                    .author_meta {
+                        color: #919191;
+                    }
                 }
             }
         }

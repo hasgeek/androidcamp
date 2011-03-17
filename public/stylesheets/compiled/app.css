@@ -1171,25 +1171,52 @@ a img {
 #talks #talk_list {
   margin-top: 20px;
 }
+/* line 84, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk {
+  clear: both;
+}
 /* line 86, ../../../app/stylesheets/app.scss */
-#talks #talk_list .talk .title a {
+#talks #talk_list .talk .voting_form {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  vertical-align: top;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #talks #talk_list .talk .voting_form {
+  overflow-x: hidden;
+}
+/* line 90, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_details {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+}
+/* line 138, ../../../../../../../home/akashmanohar/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #talks #talk_list .talk .talk_details {
+  overflow-x: hidden;
+}
+/* line 94, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_details .title a {
   color: #06C;
   font-size: 110%;
 }
-/* line 91, ../../../app/stylesheets/app.scss */
-#talks #talk_list .talk .talk_meta {
+/* line 100, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_details .talk_meta {
   font-size: 85%;
 }
-/* line 93, ../../../app/stylesheets/app.scss */
-#talks #talk_list .talk .talk_meta .votes {
+/* line 102, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_details .talk_meta .votes {
   color: #555;
 }
-/* line 96, ../../../app/stylesheets/app.scss */
-#talks #talk_list .talk .talk_meta .author_meta {
+/* line 105, ../../../app/stylesheets/app.scss */
+#talks #talk_list .talk .talk_details .talk_meta .author_meta {
   color: #919191;
 }
 
-/* line 104, ../../../app/stylesheets/app.scss */
+/* line 114, ../../../app/stylesheets/app.scss */
 #activity {
   display: inline;
   float: left;
@@ -1201,18 +1228,18 @@ a img {
   overflow-x: hidden;
 }
 
-/* line 109, ../../../app/stylesheets/app.scss */
+/* line 119, ../../../app/stylesheets/app.scss */
 #talks .block_title, #activity .block_title {
   font-size: 120%;
   color: #777;
 }
 
-/* line 116, ../../../app/stylesheets/app.scss */
+/* line 126, ../../../app/stylesheets/app.scss */
 #activity .block_title {
   text-align: center;
 }
 
-/* line 121, ../../../app/stylesheets/app.scss */
+/* line 131, ../../../app/stylesheets/app.scss */
 .submit_button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -1276,7 +1303,7 @@ a img {
   color: white;
 }
 
-/* line 125, ../../../app/stylesheets/app.scss */
+/* line 135, ../../../app/stylesheets/app.scss */
 .show_talk {
   display: inline;
   float: left;
@@ -1289,33 +1316,33 @@ a img {
 * html .show_talk {
   overflow-x: hidden;
 }
-/* line 130, ../../../app/stylesheets/app.scss */
+/* line 140, ../../../app/stylesheets/app.scss */
 .show_talk .talk_meta {
   font-size: 85%;
 }
-/* line 132, ../../../app/stylesheets/app.scss */
+/* line 142, ../../../app/stylesheets/app.scss */
 .show_talk .talk_meta .votes {
   color: #555;
 }
-/* line 135, ../../../app/stylesheets/app.scss */
+/* line 145, ../../../app/stylesheets/app.scss */
 .show_talk .talk_meta .author_meta {
   color: #919191;
 }
-/* line 140, ../../../app/stylesheets/app.scss */
+/* line 150, ../../../app/stylesheets/app.scss */
 .show_talk .title {
   font-size: 140%;
 }
-/* line 144, ../../../app/stylesheets/app.scss */
+/* line 154, ../../../app/stylesheets/app.scss */
 .show_talk .description {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 149, ../../../app/stylesheets/app.scss */
+/* line 159, ../../../app/stylesheets/app.scss */
 .show_talk .comment_count {
   font-size: 120%;
   font-family: Serif;
 }
-/* line 153, ../../../app/stylesheets/app.scss */
+/* line 163, ../../../app/stylesheets/app.scss */
 .show_talk .comments {
   display: inline;
   float: left;
@@ -1326,7 +1353,7 @@ a img {
 * html .show_talk .comments {
   overflow-x: hidden;
 }
-/* line 155, ../../../app/stylesheets/app.scss */
+/* line 165, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment {
   display: inline;
   float: left;
@@ -1342,17 +1369,17 @@ a img {
 * html .show_talk .comments .comment {
   overflow-x: hidden;
 }
-/* line 162, ../../../app/stylesheets/app.scss */
+/* line 172, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .author_meta {
   text-transform: uppercase;
   font-size: 80%;
   color: #999;
 }
-/* line 167, ../../../app/stylesheets/app.scss */
+/* line 177, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_text {
   color: #666;
 }
-/* line 172, ../../../app/stylesheets/app.scss */
+/* line 182, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form {
   display: inline;
   float: left;
@@ -1363,12 +1390,12 @@ a img {
 * html .show_talk .comment_form {
   overflow-x: hidden;
 }
-/* line 174, ../../../app/stylesheets/app.scss */
+/* line 184, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_description {
   height: 60px;
   width: 455px;
 }
-/* line 175, ../../../app/stylesheets/app.scss */
+/* line 185, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_msg {
   display: inline;
   float: left;

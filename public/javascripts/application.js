@@ -33,10 +33,10 @@ $(document).ready(function(){
     });
 
     // voting
-    $(".vote_form").bind('ajax:success', function(e, data, status, xhr){
+    $(".voting_form").bind('ajax:success', function(e, data, status, xhr){
         // TODO hide the button
     });
-    $(".vote_form").bind('ajax:error', function(e, xhr, status, error){
+    $(".voting_form").bind('ajax:error', function(e, xhr, status, error){
         // just leave the button alone
     });
 });
