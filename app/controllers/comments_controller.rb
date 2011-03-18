@@ -1,9 +1,10 @@
 class CommentsController < ApplicationController
 
   before_filter :auth_user
-
+  load_and_authorize_resource
+  
   def create
-    @comment = Comment.new(params[:comment])
+    @comment = Comment.new params[:comment]
     @comment.user_id = @current_user.id
     if request.xhr?
       if @comment.save
@@ -15,7 +16,21 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    #TODO
+    @comment = Comment.includes(:talk).find(params[:id])
+  end
+
+  def update
+    @comment = Comment.find params[:id]
+
+    if @comment.save
+      redirect_to comment_url(@comment)
+    else
+      render :edit
+    end
+  end
+
+  def show
+    @comment = Comment.find params[:id]
   end
   
   def destroy
