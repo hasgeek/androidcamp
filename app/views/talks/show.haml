@@ -22,10 +22,15 @@
     .talk_meta
       %span.votes
         = @talk.votes_count
-        votes
+        votes,
       %span.author_meta
         submitted by 
         = @talk.user.name
+        - if can? :edit, @current_user
+          [
+          %span><
+            = link_to "edit", edit_talk_url(@talk)
+          ]  
   .description_wrapper
     .description
       = @talk.description

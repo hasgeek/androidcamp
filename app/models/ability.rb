@@ -9,9 +9,11 @@ class Ability
       can :manage, :all
     elsif user.role == "participant"
       can [:create, :read], [Talk, Comment]
+      can :newest, Talk
       can :update, Talk, :user_id => user.id
     else
       can :read, [Talk, Comment]
+      can :newest, Talk
     end
     
     # Define abilities for the passed in user here. For example:
