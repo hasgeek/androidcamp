@@ -42,7 +42,7 @@ class TalksController < ApplicationController
       end
     else
       if @talk.save
-        redirect_to(@talk, :notice => 'Talk was successfully created.')
+        redirect_to(@talk, :notice => "Yo! there's your talk")
       else
         render :action => "new"
       end
@@ -53,7 +53,7 @@ class TalksController < ApplicationController
     @talk = Talk.find(params[:id])
 
     if @talk.update_attributes(params[:talk])
-      redirect_to(@talk, :notice => 'Talk was successfully updated.')
+      redirect_to(@talk, :notice => 'Talk proposal updated! So now you can sleep well')
     else
       render :action => "edit"
     end

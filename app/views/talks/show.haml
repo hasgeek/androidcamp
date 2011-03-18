@@ -29,7 +29,11 @@
         - if can? :edit, @current_user
           [
           %span><
-            = link_to "edit", edit_talk_url(@talk)
+            = link_to "edit", edit_talk_url(@talk)        
+        - if can? :destroy, @current_user
+          \/
+          %span><
+            = link_to "delete", talk_url(@talk), :method=>:delete
           ]  
   .description_wrapper
     .description
