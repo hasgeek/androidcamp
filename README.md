@@ -10,13 +10,13 @@ The site is a rails (v3.0.5) app. You'll need ruby 1.9.2 (for good) and rubygems
 
 * clone this repo
 * Install the bundler gem
-  gem install bundler --no-ri --no-rdoc
+     $ gem install bundler --no-ri --no-rdoc
 * Install all the dependencies by using bundler
-  $ bundle install
+     $ bundle install
 * Migrate the database (it'll use sqlite by default)
-  $ rake db:migrate
+     $ rake db:migrate
 * To start the development server
-  $ rails s
+     $ rails s
 
 __Some info for you hackers__
 
