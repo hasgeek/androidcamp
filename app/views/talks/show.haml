@@ -28,11 +28,11 @@
         = @talk.user.name
         - if can? :edit, @current_user
           [
-          %span><
+          %span.control_link><
             = link_to "edit", edit_talk_url(@talk)        
         - if can? :destroy, @current_user
           \/
-          %span><
+          %span.control_link><
             = link_to "delete", talk_url(@talk), :method=>:delete
           ]  
   .description_wrapper
@@ -49,6 +49,11 @@
           = c.user.name unless c.user.nil?
           \//
           = link_to c.posted_on, talk_path(@talk, :anchor=>"comment_"+c.id.to_s), :name=>"comment_"+c.id.to_s
+          - if can? :destroy, c
+            [
+            %span.delete_link><
+              = link_to "delete", comment_url(c), :method=>:delete
+            ]
         .comment_text
           = c.description
 

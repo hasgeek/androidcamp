@@ -158,6 +158,11 @@ $droid-green: #4E7000;
             .author_meta {
                 color: #919191;
             }
+            .control_link {
+                a {
+                    color: #0066cc;
+                }
+            }
         }
     }
 
@@ -197,6 +202,11 @@ $droid-green: #4E7000;
                 a {
                     @include link-colors(#999);
                     text-decoration: none;
+                }
+                .delete_link {
+                    a {
+                        color: #0066cc;
+                    }
                 }
             }
             .comment_text {

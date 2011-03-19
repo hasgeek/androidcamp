@@ -1360,7 +1360,11 @@ a img {
 .show_talk .talk_details .talk_meta .author_meta {
   color: #919191;
 }
-/* line 164, ../../../app/stylesheets/app.scss */
+/* line 162, ../../../app/stylesheets/app.scss */
+.show_talk .talk_details .talk_meta .control_link a {
+  color: #0066cc;
+}
+/* line 169, ../../../app/stylesheets/app.scss */
 .show_talk .description_wrapper {
   padding-left: 40px;
   display: inline;
@@ -1372,7 +1376,7 @@ a img {
 * html .show_talk .description_wrapper {
   overflow-x: hidden;
 }
-/* line 168, ../../../app/stylesheets/app.scss */
+/* line 173, ../../../app/stylesheets/app.scss */
 .show_talk .description_wrapper .description {
   padding: 5px;
   border: 1px solid #CCE6B3;
@@ -1380,7 +1384,7 @@ a img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 177, ../../../app/stylesheets/app.scss */
+/* line 182, ../../../app/stylesheets/app.scss */
 .show_talk .comments {
   padding-left: 40px;
   display: inline;
@@ -1392,13 +1396,13 @@ a img {
 * html .show_talk .comments {
   overflow-x: hidden;
 }
-/* line 181, ../../../app/stylesheets/app.scss */
+/* line 186, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment_count {
   font-size: 120%;
   font-family: Serif;
   font-style: italic;
 }
-/* line 186, ../../../app/stylesheets/app.scss */
+/* line 191, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment {
   display: inline;
   float: left;
@@ -1414,22 +1418,26 @@ a img {
 * html .show_talk .comments .comment {
   overflow-x: hidden;
 }
-/* line 193, ../../../app/stylesheets/app.scss */
+/* line 198, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_meta {
   text-transform: uppercase;
   font-size: 80%;
   color: #999;
 }
-/* line 197, ../../../app/stylesheets/app.scss */
+/* line 202, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_meta a {
   color: #999999;
   text-decoration: none;
 }
-/* line 202, ../../../app/stylesheets/app.scss */
+/* line 207, ../../../app/stylesheets/app.scss */
+.show_talk .comments .comment .comment_meta .delete_link a {
+  color: #0066cc;
+}
+/* line 212, ../../../app/stylesheets/app.scss */
 .show_talk .comments .comment .comment_text {
   color: #666;
 }
-/* line 207, ../../../app/stylesheets/app.scss */
+/* line 217, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form {
   padding-left: 40px;
   display: inline;
@@ -1442,12 +1450,12 @@ a img {
 * html .show_talk .comment_form {
   overflow-x: hidden;
 }
-/* line 211, ../../../app/stylesheets/app.scss */
+/* line 221, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_description {
   height: 60px;
   width: 455px;
 }
-/* line 212, ../../../app/stylesheets/app.scss */
+/* line 222, ../../../app/stylesheets/app.scss */
 .show_talk .comment_form #comment_msg {
   display: inline;
   float: left;
