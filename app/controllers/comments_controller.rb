@@ -34,8 +34,10 @@ class CommentsController < ApplicationController
   end
   
   def destroy
-    @comment = Comment.find params[:id]
+    @comment = Comment.includes(:talk).find params[:id]
+    talk = @comment.talk
     @comment.destroy
+    redirect_to talk_url(talk)
   end
   
 end
