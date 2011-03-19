@@ -12,7 +12,7 @@ gem 'compass'
 gem 'fancy-buttons'
 gem 'jquery-rails'
 gem 'omniauth'
-gem 'oa-openid'
+gem 'oa-oauth'
 gem 'cancan'
 
 group :development, :test do
