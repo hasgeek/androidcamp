@@ -12,8 +12,9 @@ gem 'compass'
 gem 'fancy-buttons'
 gem 'jquery-rails'
 gem 'omniauth'
-gem 'oa-oauth'
+gem 'oa-openid'
 gem 'cancan'
+gem 'tiny_mce'
 
 group :development, :test do
   gem 'cucumber-rails'

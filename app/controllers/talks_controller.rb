@@ -3,6 +3,7 @@ class TalksController < ApplicationController
   before_filter :auth_user, :except => [:index, :show, :popular, :newest]
   before_filter :current_user, :only =>[:index, :show]
   load_and_authorize_resource
+  uses_tiny_mce
 
   def newest
     @talks = Talk.includes(:user).order("created_at DESC")
