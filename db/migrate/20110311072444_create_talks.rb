@@ -1,7 +1,7 @@
 class CreateTalks < ActiveRecord::Migration
   def self.up
     create_table :talks do |t|
-      t.string :title
+      t.text :title
       t.text :description
 
       t.timestamps
