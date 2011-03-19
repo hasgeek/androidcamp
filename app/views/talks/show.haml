@@ -26,18 +26,18 @@
       %span.author_meta
         submitted by 
         = @talk.user.name
-        - if can? :edit, @current_user
+        - if can? :edit, @talk
           [
           %span.control_link><
-            = link_to "edit", edit_talk_url(@talk)        
-        - if can? :destroy, @current_user
+            = link_to "edit", edit_talk_url(@talk)
+        - if can? :destroy, @talk
           \/
           %span.control_link><
             = link_to "delete", talk_url(@talk), :method=>:delete
-          ]  
+        ]
   .description_wrapper
     .description
-      = @talk.description
+      = @talk.description.html_safe
   
   .comments
     .comment_count
