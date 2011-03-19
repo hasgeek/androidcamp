@@ -3,8 +3,8 @@ AndroidCamp.in
 
 talk proposal website for androidcamp.
 
-How to contribute
-------------------
+How to get this up and running on your computer
+------------------------------------------------
 
 The site is a rails (v3.0.5) app. You'll need ruby 1.9.2 (for good) and rubygems. The following *getting-started* assumes you have the requirements. Here are steps on how to get a version of the site running on your computer:
 
