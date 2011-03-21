@@ -12,7 +12,7 @@ Androidcamp::Application.routes.draw do
 
  
   match "auth/:provider/callback" => "sessions#create"
-  match "/signout" => "sessions#destroy", :as => :signout
+  match "/oauth_signout" => "sessions#destroy", :as => :oauth_signout
   match "/login" => "main#login", :as => :ask_login
 
   # The priority is based upon order of creation:

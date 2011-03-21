@@ -6,6 +6,8 @@ require 'fancy-buttons'
 project_type = :rails
 project_path = Compass::AppIntegration::Rails.root
 # Set this to the root of your project when deployed:
+
+line_comments = false
 http_path = "/"
 css_dir = "public/stylesheets/compiled"
 sass_dir = "app/stylesheets"

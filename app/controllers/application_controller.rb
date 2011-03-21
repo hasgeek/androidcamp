@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-
   helper_method :current_user
   helper_method :auth_user
   helper_method :user_logged_in?
