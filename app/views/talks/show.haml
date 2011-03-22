@@ -9,7 +9,7 @@
     =link_to "Submit", new_talk_path
 
 .show_talk
-  - if(user_logged_in? and @current_user.voted_for?(@talk.id))
+  - if user_logged_in? and @current_user.voted_for?(@talk.id) and (@current_user.id != @talk.user.id)
     = form_for @talk.votes.build(:user_id=>current_user.id), :remote=>true, :html=>{:'data-type'=>'html', :class=>'voting_form'} do |f|
       = token_tag
       = f.hidden_field :talk_id, :value => @talk.id
