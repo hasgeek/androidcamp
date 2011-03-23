@@ -25,6 +25,10 @@ $droid-green: #4E7000;
         margin-bottom: 20px;
         text-align: center;
 
+        #droid_logo a{
+            text-decoration: none;
+        }
+
         #site_name {
             -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 1)));
             color: #699108;

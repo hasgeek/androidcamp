@@ -29,11 +29,12 @@
           = link_to "Sign In with Google", "/auth/google", :class=>"login_link"
       #header
         #droid_logo
-          = image_tag "android.png"
-        %h1{:id=>"site_name"}
-          %span{:id=>"android"}>Android
-          &#8203;
-          %span{:id=>"camp"}>Camp
+          %a{:href=>"/"}
+            = image_tag "android.png"
+            %h1{:id=>"site_name"}
+              %span{:id=>"android"}>Android
+              &#8203;
+              %span{:id=>"camp"}>Camp
         #event_date
           Friday, 1 April 2011, Bangalore
       -if notice

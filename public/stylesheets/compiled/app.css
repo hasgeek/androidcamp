@@ -855,6 +855,9 @@ a img {
 * html .wrapper #header {
   overflow-x: hidden;
 }
+.wrapper #header #droid_logo a {
+  text-decoration: none;
+}
 .wrapper #header #site_name {
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(white));
   color: #699108;
