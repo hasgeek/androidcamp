@@ -53,6 +53,7 @@ $droid-green: #4E7000;
 
     #footer {
         @include column(24,true);
+        margin-bottom: 1em;
         margin-top: 40px;
         text-align: center;
         color: $droid-green;
