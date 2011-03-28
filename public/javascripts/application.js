@@ -2,6 +2,8 @@
 // This file is automatically included by javascript_include_tag :defaults
 
 $(document).ready(function(){
+    $("#comment_loader").hide();
+
     // talks#show
     $("#comment_msg").hide();
     $(".comment_form").bind('ajax:success', function(e, data, status, xhr){
@@ -11,9 +13,19 @@ $(document).ready(function(){
             '<div class="comment_meta">' + res['comment']['user']['name'] +'</div>' +
             '<div class="comment_text">' + res['comment']['description'] + '</div>' +
             '</div>';
-        console.log(htmlDump);
+        $("#comment_loader").hide();
+        $("#comment_submit").show();
+        $("#comment_description").text("");
         $(".comments").append(htmlDump);
     });
+
+
+    $(".comment_form").bind('ajax:loading', function(){
+        $("#comment_loader").show();
+        $("#comment_submit").hide();
+    });
+
+
     $(".comment_form").bind('ajax:error', function(e, xhr, status, error){
         var errorMsg;
         if(xhr.responseText == "not authorized") {
@@ -28,6 +40,9 @@ $(document).ready(function(){
         }
         $("#comment_msg").html(errorMsg);
         $("#comment_msg").show();
+
+        $("#comment_loader").hide();
+        $("#comment_submit").show();
     });
 
     // voting
