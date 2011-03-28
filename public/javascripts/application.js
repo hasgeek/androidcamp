@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
 
-    $(".comment_form").bind('ajax:loading', function(){
+    $(".comment_form").bind('ajax:beforeSend', function(){
         $("#comment_loader").show();
         $("#comment_submit").hide();
     });
